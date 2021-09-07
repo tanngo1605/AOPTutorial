@@ -13,6 +13,7 @@ import org.springframework.context.ConfigurableApplicationContext;
 
 @SpringBootApplication
 public class DemoApplication {
+	private static void printSth(){}
 
 	public static void main(String[] args) {
 		ConfigurableApplicationContext context = SpringApplication.run(DemoApplication.class, args);
@@ -50,9 +51,5 @@ public class DemoApplication {
 		context.close();
 
 	}
-
-}
-
-class MyClass extends LinkedList<Integer> {
 
 }
